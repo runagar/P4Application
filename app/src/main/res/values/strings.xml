@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">P4 Application</string>
+    <string name="Top_left_button_content_description"> Top Left Button </string>
+    <string name="Top_right_button_content_description"> Top Right Button </string>
 </resources>

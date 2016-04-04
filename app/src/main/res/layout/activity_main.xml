@@ -9,8 +9,30 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.android.mta16435.p4application.Main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <Space
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/TopMidSpace"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:id="@+id/TopLeftButton"
+        android:layout_below="@id/TopMidSpace"
+        android:layout_toStartOf="@id/TopMidSpace"
+        android:contentDescription="Top left button"
+        android:scaleType="fitXY"
+        android:src="@drawable/the_dark_knight_returns_cover1"
+        android:background="#00ffffff"
+        android:onClick="goToBatman"/>
+
+    <ImageButton
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:id="@+id/TopRightButton"
+        android:layout_below="@id/TopMidSpace"
+        android:layout_toEndOf="@id/TopMidSpace"
+        android:contentDescription="Top right button"/>
 </RelativeLayout>
